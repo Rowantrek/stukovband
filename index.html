@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Stukov</title>
-		<meta charset="UTF-8">
-		<!-- Load Normalize -->
-		<link href="css/norm.css" rel='stylesheet' type='text/css'>
-		<!-- Load Fonts -->
-		<link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:900' rel='stylesheet' type='text/css'>
-		<!-- Load Stylesheets -->
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="favicon.png">
+  <head>
+    <title>Stukov</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load Normalize -->
+    <link href="css/norm.css" rel='stylesheet' type='text/css'>
+    <!-- Load Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:900' rel='stylesheet' type='text/css'>
+    <!-- Load Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- Carousel -->
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.css">
 
 
 
-	</head>
-	<body>
-	<!-- Header -->
-	<header>
-		<nav>
-			<ul>
-				<li><img src="images/stukov.png"></li>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="songs.html" class="active">Our Songs</a></li>
-				<li><a href="about.html">About Us</a></li>
-			</ul>
-		</nav>
-	</header>
-	<!-- End Header -->
-	<div id="wrapper">
-	<!-- Song Title -->
-	<p class="first">HONK</p>
-	<!-- Song Player -->
-	<div class="video">
-	<video width="720" height="540" controls>
-    <source src="videos/movie.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-	</video>
-	</div>
-	<!-- View More/Download Links -->
-	<div class="dlvm">
-		<h1><a href="songs.html">View More Songs</a></h1>
-		<h3><a href="videos/movie.mp4">Free Download</a></h3>
-	</div>
-	<!-- Footer -->
-	<!-- End Of Footer -->
-</div>
-	</body>
+
+  </head>
+  <body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <ul> 
+        <li><img src="images/copy.png"></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="songs.html">Our Songs</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- End Header -->
+
+
+  <div id="indexwrapper">
+    <!-- Flickity HTML init -->
+    <div class="gallery js-flickity" data-flickity-options='{ "autoPlay": true }'>
+      <div class="gallery-cell"><img src="images/sound.png"></div>
+      <div class="gallery-cell"><img src="images/Great.png"></div>
+      <div class="gallery-cell"><img src="images/expert.png"></div>
+    </div>
+
+
+  </div>
+    <!-- Scripts --> 
+      <!-- Carousel Script -->
+      <script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.js"></script>
+
+
+  </body>
 </html>
